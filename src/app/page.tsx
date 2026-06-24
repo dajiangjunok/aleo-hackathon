@@ -219,12 +219,20 @@ export default function Home() {
     <main className="min-h-screen bg-[var(--background)] text-[var(--ink)]">
       <nav className="sticky top-0 z-50 border-b border-black/5 bg-[var(--background)]/85 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8">
-          <a href="#top" className="flex items-center gap-3">
-            <span className="grid size-9 place-items-center rounded-[6px] bg-[var(--ink)] font-display text-sm font-black text-[var(--aleo-green)]">
-              A
-            </span>
-            <span className="font-display text-base font-black tracking-tight">
-              Aleo Hackathon
+          <a
+            href="#top"
+            className="group inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/70 px-3 py-2 shadow-sm transition hover:-translate-y-0.5 hover:border-[var(--aleo-green)] hover:bg-white"
+          >
+            <span
+              aria-hidden="true"
+              className="block h-[21px] w-[57px] bg-[var(--ink)] [mask-image:url(/logo.svg)] [mask-position:center] [mask-repeat:no-repeat] [mask-size:contain] [-webkit-mask-image:url(/logo.svg)] [-webkit-mask-position:center] [-webkit-mask-repeat:no-repeat] [-webkit-mask-size:contain]"
+            />
+            <span
+              aria-hidden="true"
+              className="h-5 w-px bg-black/15 transition group-hover:bg-[var(--aleo-green)]"
+            />
+            <span className="font-mono text-[11px] font-bold uppercase leading-none tracking-[0.18em] text-[var(--ink)]">
+              Hackathon
             </span>
           </a>
           <div className="hidden items-center gap-7 text-sm font-medium text-[var(--muted)] md:flex">
@@ -301,7 +309,7 @@ export default function Home() {
                   <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--muted)]">
                     {label}
                   </p>
-                  <p className="mt-2 font-display text-2xl font-black tracking-tight">
+                  <p className="mt-2 font-display text-xl font-black tracking-tight">
                     {value}
                   </p>
                 </div>
