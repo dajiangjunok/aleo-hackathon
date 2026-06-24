@@ -367,13 +367,11 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-8 grid gap-4 lg:grid-cols-5">
-            {tracks.map((track, index) => (
+          <div className="mt-8 grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+            {tracks.map((track) => (
               <article
                 key={track.title}
-                className={`rounded-[8px] border border-[var(--line)] bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[var(--aleo-green)] hover:shadow-[0_22px_70px_rgba(17,23,11,0.1)] ${
-                  index === 0 ? "lg:col-span-2" : ""
-                }`}
+                className="flex h-full flex-col rounded-[8px] border border-[var(--line)] bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[var(--aleo-green)] hover:shadow-[0_22px_70px_rgba(17,23,11,0.1)]"
               >
                 <div className="flex items-center justify-between gap-3">
                   <span className="grid size-12 place-items-center rounded-[6px] bg-[var(--ink)] font-mono text-sm font-bold text-[var(--aleo-green)]">
@@ -383,16 +381,16 @@ export default function Home() {
                     $1,000
                   </span>
                 </div>
-                <h3 className="mt-6 font-display text-2xl font-black leading-tight tracking-tight">
+                <h3 className="mt-6 font-display text-2xl font-black leading-tight tracking-tight sm:min-h-[3.75rem]">
                   {track.title}
                 </h3>
-                <p className="mt-3 text-sm leading-7 text-[var(--muted)]">
+                <p className="mt-3 text-sm leading-7 text-[var(--muted)] sm:min-h-[5.25rem]">
                   {track.summary}
                 </p>
-                <ul className="mt-5 space-y-2 text-sm text-[var(--ink)]">
+                <ul className="mt-5 space-y-2 border-t border-[var(--line)] pt-5 text-sm text-[var(--ink)]">
                   {track.ideas.map((idea) => (
                     <li key={idea} className="flex gap-2">
-                      <span className="mt-2 size-1.5 rounded-full bg-[var(--aleo-green)]" />
+                      <span className="mt-2 size-1.5 shrink-0 rounded-full bg-[var(--aleo-green)]" />
                       <span>{idea}</span>
                     </li>
                   ))}
