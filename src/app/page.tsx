@@ -367,34 +367,58 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-8 grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-            {tracks.map((track) => (
+          <div className="mt-10 grid items-stretch gap-5 lg:grid-cols-2">
+            {tracks.map((track, index) => (
               <article
                 key={track.title}
-                className="flex h-full flex-col rounded-[8px] border border-[var(--line)] bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[var(--aleo-green)] hover:shadow-[0_22px_70px_rgba(17,23,11,0.1)]"
+                className={`group relative isolate flex h-full overflow-hidden rounded-[8px] border border-[var(--line)] bg-white/90 shadow-[0_18px_60px_rgba(17,23,11,0.07)] transition duration-300 hover:-translate-y-1 hover:border-[var(--aleo-green)] hover:shadow-[0_28px_90px_rgba(17,23,11,0.13)] ${
+                  index === tracks.length - 1 ? "lg:col-span-2" : ""
+                }`}
               >
-                <div className="flex items-center justify-between gap-3">
-                  <span className="grid size-12 place-items-center rounded-[6px] bg-[var(--ink)] font-mono text-sm font-bold text-[var(--aleo-green)]">
-                    {track.key}
-                  </span>
-                  <span className="rounded-full bg-[var(--green-soft)] px-3 py-1 text-sm font-bold text-[var(--ink)]">
-                    $1,000
-                  </span>
+                <div className="absolute inset-0 -z-10 bg-[linear-gradient(135deg,rgba(209,255,76,0.28),transparent_34%),radial-gradient(circle_at_92%_12%,rgba(209,255,76,0.34),transparent_24%),linear-gradient(180deg,#fff,rgba(241,246,233,0.64))]" />
+                <div className="absolute inset-x-0 top-0 h-1 bg-[linear-gradient(90deg,var(--ink),var(--aleo-green),transparent)] opacity-80" />
+                <div className="absolute right-0 top-0 -z-10 size-32 translate-x-10 -translate-y-10 rounded-full bg-[var(--aleo-green)]/30 blur-3xl transition duration-300 group-hover:bg-[var(--aleo-green)]/45" />
+
+                <div className="flex w-full flex-col p-6 sm:p-7">
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="flex items-center gap-4">
+                      <span className="grid size-14 place-items-center rounded-[6px] bg-[var(--ink)] font-mono text-base font-black text-[var(--aleo-green)] shadow-[0_16px_40px_rgba(17,23,11,0.22)]">
+                        {track.key}
+                      </span>
+                      <div>
+                        <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-[var(--green-deep)]">
+                          Track {String(index + 1).padStart(2, "0")}
+                        </p>
+                        <span className="mt-2 inline-flex rounded-full border border-[var(--line)] bg-white/80 px-3 py-1 text-sm font-black text-[var(--ink)] shadow-sm">
+                          $1,000 Winner Prize
+                        </span>
+                      </div>
+                    </div>
+                    <span className="mt-1 hidden h-10 w-10 shrink-0 rounded-full border border-[var(--aleo-green)] bg-[var(--aleo-green)]/25 shadow-[0_0_35px_rgba(209,255,76,0.45)] sm:block" />
+                  </div>
+
+                  <div className="mt-7 grid flex-1 gap-6 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
+                    <div>
+                      <h3 className="font-display text-3xl font-black leading-tight tracking-tight text-[var(--ink)]">
+                        {track.title}
+                      </h3>
+                      <p className="mt-4 text-base leading-8 text-[var(--muted)]">
+                        {track.summary}
+                      </p>
+                    </div>
+
+                    <ul className="flex flex-wrap content-start gap-2 border-t border-[var(--line)] pt-5 text-sm text-[var(--ink)] lg:border-l lg:border-t-0 lg:pl-6 lg:pt-0">
+                      {track.ideas.map((idea) => (
+                        <li
+                          key={idea}
+                          className="rounded-full border border-[var(--line)] bg-white/75 px-3 py-2 font-bold shadow-sm transition group-hover:border-[var(--aleo-green)]"
+                        >
+                          {idea}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
-                <h3 className="mt-6 font-display text-2xl font-black leading-tight tracking-tight sm:min-h-[3.75rem]">
-                  {track.title}
-                </h3>
-                <p className="mt-3 text-sm leading-7 text-[var(--muted)] sm:min-h-[5.25rem]">
-                  {track.summary}
-                </p>
-                <ul className="mt-5 space-y-2 border-t border-[var(--line)] pt-5 text-sm text-[var(--ink)]">
-                  {track.ideas.map((idea) => (
-                    <li key={idea} className="flex gap-2">
-                      <span className="mt-2 size-1.5 shrink-0 rounded-full bg-[var(--aleo-green)]" />
-                      <span>{idea}</span>
-                    </li>
-                  ))}
-                </ul>
               </article>
             ))}
           </div>
