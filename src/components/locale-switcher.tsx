@@ -29,7 +29,7 @@ export default function LocaleSwitcher({
   return (
     <div
       aria-label={label}
-      className="flex rounded-full border border-black/10 bg-white/70 p-1 shadow-sm"
+      className="locale-switcher"
       role="group"
     >
       {Object.entries(localeLabels).map(([value, text]) => {
@@ -40,11 +40,7 @@ export default function LocaleSwitcher({
           <button
             key={nextLocale}
             aria-pressed={isActive}
-            className={`min-w-8 rounded-full px-2 py-1 font-mono text-[11px] font-bold transition ${
-              isActive
-                ? "bg-[var(--ink)] text-white"
-                : "text-[var(--muted)] hover:text-[var(--ink)]"
-            }`}
+            className={isActive ? "is-active" : ""}
             onClick={() => switchLocale(nextLocale)}
             type="button"
           >
