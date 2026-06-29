@@ -10,7 +10,7 @@ function Arrow({ diagonal = false }: { diagonal?: boolean }) {
 }
 
 function ProofOrbit({ output }: { output: string }) {
-  const nodes = ["AI", "PAY", "DEF", "DEV", "SOC"];
+  const nodes = ["AI", "PAY", "DEFI", "DEV", "SOC"];
 
   return (
     <div className="proof-orbit" aria-label={output}>
