@@ -1,0 +1,123 @@
+{
+  "Metadata": {
+    "title": "Aleo Hackathon | Build Programmable Privacy",
+    "description": "The Aleo x OpenBuild Hackathon invites builders across APAC to compete in five tracks for a $5,000 prize pool and create the next generation of privacy-first applications.",
+    "ogTitle": "The Aleo Hackathon Is Now Open",
+    "ogDescription": "Five tracks, five winning projects, and a $5,000 prize pool. Join the Aleo Hackathon and build the next generation of programmable privacy applications."
+  },
+  "Home": {
+    "languageSwitcher": "Switch language",
+    "nav": {
+      "tracks": "Tracks",
+      "schedule": "Timeline",
+      "about": "About Aleo",
+      "apply": "Apply",
+      "applyNow": "Apply Now"
+    },
+    "hero": {
+      "eyebrow": "Aleo x OpenBuild · APAC Builders",
+      "title": "Aleo Hackathon",
+      "titleAccent": "Now Open",
+      "lead": "We are looking for builders creating the next generation of privacy-first applications—from AI agents and private payments to DeFi and developer infrastructure.",
+      "body": "If you believe the next generation of the internet needs privacy and user-owned data alongside openness and transparency, now is the time to build in the Aleo ecosystem.",
+      "viewTracks": "Explore the 5 Tracks",
+      "stats": [
+        { "label": "Prize Pool", "value": "$5,000" },
+        { "label": "Tracks", "value": "5 Tracks" },
+        { "label": "Winning Projects", "value": "5 Winners" },
+        { "label": "Prize per Track", "value": "$1,000" }
+      ]
+    },
+    "proof": {
+      "eyebrow": "Proof Window",
+      "line1": "Build privately.",
+      "line2": "Prove publicly.",
+      "output": "output: 5 tracks, 5 winners, programmable privacy"
+    },
+    "apply": {
+      "eyebrow": "Apply",
+      "title": "Open to builders across APAC.",
+      "body": "Whether you are an experienced blockchain developer or new to Aleo, you are welcome to participate if you are excited about building in privacy, AI, payments, DeFi, gaming, social applications, or infrastructure."
+    },
+    "tracksSection": {
+      "eyebrow": "Prize Pool",
+      "title": "5 Tracks · 5 Winning Projects",
+      "body": "One winning project will be selected from each track and awarded $1,000.",
+      "trackLabel": "Track {number}",
+      "prize": "$1,000 Track Prize"
+    },
+    "tracks": [
+      {
+        "key": "AI",
+        "title": "AI × Privacy Track",
+        "summary": "Combine AI with privacy-preserving computation to build intelligent tools that protect user data and data sovereignty by design.",
+        "ideas": ["AI Agents", "Personal AI Assistants", "AI Data Marketplaces", "AI Workflow Tools", "Privacy-Preserving AI Inference"]
+      },
+      {
+        "key": "PAY",
+        "title": "Private Payments Track",
+        "summary": "Build the next generation of private payment applications so transactions, payroll, and cross-border settlements do not expose sensitive financial data.",
+        "ideas": ["Private Payment Systems", "Payroll Infrastructure", "Cross-Border Payments", "Stablecoin Payments", "Merchant Payment Tools"]
+      },
+      {
+        "key": "DEF",
+        "title": "Private DeFi Track",
+        "summary": "Bring privacy to DeFi and create on-chain financial products that are confidential, secure, and cryptographically verifiable.",
+        "ideas": ["Private DEXs", "Lending Protocols", "Yield Products", "Private Stablecoin Infrastructure", "On-Chain Financial Applications"]
+      },
+      {
+        "key": "DEV",
+        "title": "Infrastructure & Developer Tools Track",
+        "summary": "Build core infrastructure for the Aleo ecosystem and make programmable privacy easier for developers to adopt, integrate, and ship.",
+        "ideas": ["SDKs", "API Services", "Indexers", "Analytics Platforms", "Wallet Tooling", "Developer Tools"]
+      },
+      {
+        "key": "SOC",
+        "title": "GameFi & SocialFi Track",
+        "summary": "Create privacy-first games and social applications where users retain control over their identity, reputation, and interactions.",
+        "ideas": ["GameFi Applications", "SocialFi Products", "Creator Economy Tools", "Reputation Systems", "Community & Membership Platforms", "Private Social Networks"]
+      }
+    ],
+    "scheduleSection": {
+      "eyebrow": "Timeline",
+      "title": "Hackathon Timeline",
+      "body": "Move from registration and team formation to Demo Day with a focus on validating the product and delivering meaningful privacy features."
+    },
+    "schedule": [
+      { "phase": "Registration & Team Formation", "date": "2026.07.01 - 2026.07.15", "detail": "Register, form a team, define your project scope, and begin development." },
+      { "phase": "Build Phase", "date": "2026.07.01 - 2026.08.15", "detail": "Build throughout the hackathon with access to Office Hours, mentor support, and Aleo ecosystem resources." },
+      { "phase": "Demo Day", "date": "2026.08.15 - 2026.08.16", "detail": "Present your project online to the community, mentors, and Aleo ecosystem partners." },
+      { "phase": "Winners Announced", "date": "2026.08.21", "detail": "Winning projects are announced. High-potential teams may also receive ecosystem support, community exposure, incubation opportunities, and investor introductions." }
+    ],
+    "about": {
+      "eyebrow": "About Aleo",
+      "title": "What Is Aleo?",
+      "paragraph1": "Aleo is the first Layer 1 blockchain purpose-built for programmable privacy. Using zero-knowledge proofs, Aleo enables developers to build applications that protect user data while remaining verifiable on-chain.",
+      "paragraph2": "Developers can build privacy-preserving applications in Leo without becoming experts in the underlying cryptography. As AI becomes embedded in more products, private computation will be a foundational capability for the next generation of applications."
+    },
+    "domains": ["AI + Privacy", "Private Payments", "Private DeFi", "GameFi & SocialFi", "Confidential Computing", "Developer Infrastructure"],
+    "whyJoin": {
+      "eyebrow": "Why Join",
+      "title": "What You Will Gain"
+    },
+    "benefits": ["Technical support from the Aleo core team", "Collaboration with builders across APAC", "Project showcases and ecosystem visibility", "Connections to Aleo ecosystem resources", "Potential incubation and investor introductions"],
+    "whatWeWant": {
+      "eyebrow": "What We Want",
+      "title": "What Should You Build?",
+      "body": "We are looking for more than a technical demo. Build a product that solves a real problem, applies privacy in a meaningful way, and has a credible path to real users."
+    },
+    "whoCanJoin": {
+      "eyebrow": "Who Can Join",
+      "title": "Built for Multidisciplinary Teams",
+      "body": "No prior Aleo experience is required. You can learn the stack and start building during the hackathon."
+    },
+    "builders": ["Web2 Developers", "Web3 Developers", "AI Engineers", "Product Managers", "Designers", "Student Developers", "Startup Teams"],
+    "cta": {
+      "eyebrow": "Build the Future of Programmable Privacy",
+      "title": "Privacy should not be a feature. It should be the default.",
+      "body": "Join the Aleo Hackathon and build the future of private computation alongside developers from across APAC.",
+      "button": "Build on Aleo",
+      "footer": "Build the Future of Programmable Privacy."
+    }
+  }
+}
