@@ -81,11 +81,11 @@
     "scheduleSection": {
       "eyebrow": "Timeline",
       "title": "Hackathon Timeline",
-      "body": "Move from registration and team formation to Demo Day with a focus on validating the product and delivering meaningful privacy features."
+      "body": "Move from registration and project submission to Demo Day with a focus on validating the product and delivering meaningful privacy features."
     },
     "schedule": [
-      { "phase": "Registration & Team Formation", "date": "2026.07.01 - 2026.07.15", "detail": "Register, form a team, define your project scope, and begin development." },
-      { "phase": "Build Phase", "date": "2026.07.01 - 2026.08.15", "detail": "Build throughout the hackathon with access to Office Hours, mentor support, and Aleo ecosystem resources." },
+      { "phase": "Registration", "date": "2026.07.01 - 2026.08.01", "detail": "Register, define your project scope, and begin development." },
+      { "phase": "Project Submission Deadline", "date": "2026.08.14", "detail": "Teams must complete project submission before the deadline." },
       { "phase": "Demo Day", "date": "2026.08.15 - 2026.08.16", "detail": "Present your project online to the community, mentors, and Aleo ecosystem partners." },
       { "phase": "Winners Announced", "date": "2026.08.21", "detail": "Winning projects are announced. High-potential teams may also receive ecosystem support, community exposure, incubation opportunities, and investor introductions." }
     ],
