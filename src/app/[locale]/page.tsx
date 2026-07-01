@@ -5,6 +5,9 @@ type Track = { key: string; title: string; summary: string; ideas: string[] };
 type ScheduleItem = { phase: string; date: string; detail: string };
 type Stat = { label: string; value: string };
 
+const REGISTRATION_URL =
+  "https://hackathon.xyz/events/public/e7ad6199-0078-42ee-9846-b82c385e4c0e";
+
 function Arrow({ diagonal = false }: { diagonal?: boolean }) {
   return <span aria-hidden="true">{diagonal ? "↗" : "→"}</span>;
 }
@@ -72,7 +75,12 @@ export default async function Home({
               locale={locale === "en" ? "en" : "zh"}
               label={t("languageSwitcher")}
             />
-            <a className="nav-apply" href="#apply">
+            <a
+              className="nav-apply"
+              href={REGISTRATION_URL}
+              target="_blank"
+              rel="noreferrer"
+            >
               {t("nav.applyNow")} <Arrow diagonal />
             </a>
           </div>
@@ -97,7 +105,12 @@ export default async function Home({
               <p className="hero-body">{t("hero.body")}</p>
             </div>
             <div className="hero-actions">
-              <a className="button button-dark" href="#apply">
+              <a
+                className="button button-dark"
+                href={REGISTRATION_URL}
+                target="_blank"
+                rel="noreferrer"
+              >
                 {t("nav.applyNow")} <Arrow diagonal />
               </a>
               <a className="button button-line" href="#tracks">
@@ -131,7 +144,16 @@ export default async function Home({
           <h2>{t("apply.title")}</h2>
         </div>
         <p>{t("apply.body")}</p>
-        <a href="#tracks" aria-label={t("hero.viewTracks")}><Arrow diagonal /></a>
+        <a
+          className="apply-band-link"
+          href={REGISTRATION_URL}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={t("nav.applyNow")}
+        >
+          <span>{t("nav.applyNow")}</span>
+          <Arrow diagonal />
+        </a>
       </section>
 
       <section className="section tracks-section" id="tracks">
@@ -228,7 +250,14 @@ export default async function Home({
         <h2>{t("cta.title")}</h2>
         <div className="closing-bottom">
           <p>{t("cta.body")}</p>
-          <a className="button button-white" href="#apply">{t("cta.button")} <Arrow diagonal /></a>
+          <a
+            className="button button-white"
+            href={REGISTRATION_URL}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {t("cta.button")} <Arrow diagonal />
+          </a>
         </div>
       </section>
       <footer className="footer">
