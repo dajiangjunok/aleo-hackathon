@@ -1,4 +1,3 @@
-import LocaleSwitcher from "@/components/locale-switcher";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 type Track = { key: string; title: string; summary: string; ideas: string[] };
@@ -71,10 +70,6 @@ export default async function Home({
             <a href="#about">{t("nav.about")}</a>
           </div>
           <div className="nav-actions">
-            <LocaleSwitcher
-              locale={locale === "en" ? "en" : "zh"}
-              label={t("languageSwitcher")}
-            />
             <a
               className="nav-apply"
               href={REGISTRATION_URL}
